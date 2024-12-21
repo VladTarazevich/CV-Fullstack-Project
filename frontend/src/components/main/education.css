@@ -1,0 +1,29 @@
+.education-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.education-title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.education-degree {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.education-university {
+    font-size: 18px;
+    color: #666;
+}
+
+.education-dates {
+    font-size: 14px;
+    color: #999;
+}

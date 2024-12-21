@@ -1,0 +1,39 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.combined-profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-courses-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 550px;
+    margin-right: 10px;
+}
+
+.experience-container, .courses-container {
+    flex: 1;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .experience-courses-container {
+        width: 100%;
+        margin-right: 0;
+    }
+}

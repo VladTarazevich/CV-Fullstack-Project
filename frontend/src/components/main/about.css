@@ -1,0 +1,41 @@
+.about-container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    text-align: left;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 210px;
+}
+
+.text-about {
+    margin-left: 20px;
+}
+
+.about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.about-name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.about-profession {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.about-description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}

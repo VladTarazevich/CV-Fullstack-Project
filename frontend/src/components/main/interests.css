@@ -1,0 +1,22 @@
+.interests-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.interests-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.interests-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests-list li {
+    font-size: 18px;
+    margin: 5px 0;
+}

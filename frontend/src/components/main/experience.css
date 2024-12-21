@@ -1,0 +1,37 @@
+.experience-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.experience-title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-role {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.experience-company {
+    font-size: 18px;
+    color: #666;
+}
+
+.experience-dates {
+    font-size: 14px;
+    color: #999;
+}
+
+.experience-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}

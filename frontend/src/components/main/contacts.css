@@ -1,0 +1,25 @@
+.contacts-container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #81b3e4;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    min-height: 210px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}

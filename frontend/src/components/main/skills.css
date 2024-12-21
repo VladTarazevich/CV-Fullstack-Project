@@ -1,0 +1,44 @@
+.skills-container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.skills-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skill-name {
+    width: 150px;
+    font-size: 18px;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin: 0 10px;
+}
+
+.skill-fill {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.skill-percentage {
+    font-size: 16px;
+    min-width: 40px;
+    text-align: right;
+}
