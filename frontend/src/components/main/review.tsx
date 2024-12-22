@@ -7,31 +7,27 @@ const AddReview = () => {
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(false);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setError(null);
         setSuccess(false);
     
-        try {
-            const response = await fetch(`http://90.156.159.216/api/review?userName=${encodeURIComponent(userName)}&review=${encodeURIComponent(review)}`, {
-                method: 'POST',
-                headers: {
-                    'accept': 'application/json',
-                },
-                body: null, // Установите тело в null, если не нужно
-            });
-    
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.detail || 'Ошибка при добавлении отзыва');
-            }
-    
-            setSuccess(true);
-            setUserName('');
-            setReviewText('');
-        } catch (err) {
-            setError(err.message);
+        const response = await fetch(`http://90.156.159.216/api/review?userName=${encodeURIComponent(userName)}&review=${encodeURIComponent(review)}`, {
+            method: 'POST',
+            headers: {
+                'accept': 'application/json',
+            },
+            body: null, // Установите тело в null, если не нужно
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail || 'Ошибка при добавлении отзыва');
         }
+
+        setSuccess(true);
+        setUserName('');
+        setReviewText('');
     };
 
     return (

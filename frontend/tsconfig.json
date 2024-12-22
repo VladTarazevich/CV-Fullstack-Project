@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es6",                       // или другой целевой стандарт JavaScript
+      "module": "commonjs",                  // или другой модульный стандарт
+      "jsx": "react",                         // добавьте эту строку
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
