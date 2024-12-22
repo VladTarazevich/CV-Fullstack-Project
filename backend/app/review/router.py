@@ -1,7 +1,7 @@
 from fastapi import APIRouter
   
-from app.review.dao import ReviewDAO
-from app.review.schemas import SReview
+from review.dao import ReviewDAO
+from review.schemas import SReview
 
   
 router = APIRouter(

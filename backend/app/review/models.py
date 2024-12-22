@@ -1,5 +1,5 @@
 from sqlalchemy import ForeignKey
-from app.database import Base
+from database import Base
 from sqlalchemy.orm import Mapped, mapped_column
   
 class Review(Base):
