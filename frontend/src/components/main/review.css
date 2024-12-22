@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого */
+    width: 100%;
+    padding: 20px; /* Отступы вокруг контейнера */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Нежная тень */
+    background-color: #f9f9f9; /* Светлый фон */
+}
+
+.header {
+    font-size: 24px; /* Размер шрифта заголовка */
+    font-weight: bold;
+    margin-bottom: 20px; /* Отступ под заголовком */
+}
+
+.input-group {
+    width: 100%; /* Занять всю ширину */
+    margin-bottom: 15px; /* Отступ между группами */
+}
+
+label {
+    display: block; /* Каждый label занимает всю ширину */
+    margin-bottom: 5px; /* Отступ между label и input */
+    font-weight: bold; /* Жирный шрифт для меток */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Занять всю ширину */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+}
+
+button {
+    background-color: #4CAF50; /* Зеленый фон кнопки */
+    color: white; /* Белый текст */
+    border: none; /* Без границы */
+    padding: 10px 15px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 16px; /* Размер шрифта */
+}
+
+button:hover {
+    background-color: #45a049; /* Темнее при наведении */
+}
+
+.success-message {
+    color: green; /* Зеленый текст для успешного сообщения */
+}
+
+.error-message {
+    color: red; /* Красный текст для сообщений об ошибках */
+}

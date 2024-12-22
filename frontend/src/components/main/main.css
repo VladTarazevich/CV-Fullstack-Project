@@ -4,6 +4,17 @@
     flex-wrap: wrap;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .combined-profile-container {
     max-width: 800px;
     margin: 0 auto;
