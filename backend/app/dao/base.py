@@ -1,5 +1,5 @@
 from app.database import async_session_maker
-from sqlalchemy import select
+from sqlalchemy import insert, select
 
 
 class BaseDAO:
@@ -25,3 +25,11 @@ class BaseDAO:
             query = select(cls.model).filter_by(**filter_by)
             result = await session.execute(query)
             return result.scalars().all()
+
+    @classmethod
+    async def add(cls, **data):
+        query = insert(cls.model).values(**data).returning(cls.model.id)
+        async with async_session_maker() as session:
+            result = await session.execute(query)
+            await session.commit()
+            return result.mappings().first()
