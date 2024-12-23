@@ -1,12 +1,11 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import Field
 
 class Settings(BaseSettings):
-    DB_HOST: str = Field(..., env='DB_HOST')
-    DB_PORT: int = Field(..., env='DB_PORT')
-    DB_USER: str = Field(..., env='DB_USER')
-    DB_PASS: str = Field(..., env='DB_PASS')
-    DB_NAME: str = Field(..., env='DB_NAME')
+    DB_HOST: str
+    DB_PORT: int
+    DB_USER: str
+    DB_PASS: str
+    DB_NAME: str
 
     @property
     def DATABASE_URL(self):

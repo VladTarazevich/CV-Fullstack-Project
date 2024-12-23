@@ -12,7 +12,7 @@ const AddReview = () => {
         setError(null);
         setSuccess(false);
     
-        const response = await fetch(`http://90.156.159.216/api/review?userName=${encodeURIComponent(userName)}&review=${encodeURIComponent(review)}`, {
+        const response = await fetch(`http://127.0.0.1:8000/review?userName=${encodeURIComponent(userName)}&review=${encodeURIComponent(review)}`, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
